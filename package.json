@@ -2,7 +2,7 @@
   {
       "name": "TODO Notes Application",
       "version": "0.1.0",
-      "private": false,
+      "private": true,
       "dependencies": {
           "@jsr/supabase__supabase-js": "^2.49.8",
           "@radix-ui/react-accordion": "^1.2.3",
@@ -57,6 +57,7 @@
       },
       "scripts": {
           "dev": "vite",
-          "build": "vite build"
+          "build": "vite build",
+          "postinstall": "echo 'skip patch-package on vercel'"
       }
   }
